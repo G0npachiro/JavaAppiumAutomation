@@ -28,4 +28,17 @@ public class MainClassTest extends MainClass
             Assert.fail("FailTest");
         }
     }
+
+    @Test
+    public void testGetClassNumber()
+    {
+        int a = getClass_number();
+        if (a < 45)
+        {
+            System.out.println("TestDone");
+        } else {
+            Assert.fail("FailTest");
+        }
+
+    }
 }
