@@ -3,6 +3,6 @@ import org.junit.Test;
 public class MainClass {
    public int getLocalNumber()
    {
-       return 13;
+       return 15;
    }
 }
