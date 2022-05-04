@@ -3,6 +3,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.nio.charset.StandardCharsets;
+
 
 public class MainClassTest extends MainClass {
     @Before
@@ -40,7 +42,7 @@ public class MainClassTest extends MainClass {
     @Test
     public void testGetClassString() {
         String b = getClass_string();
-        if (b.contains("Hello")) {
+        if (b.contains("Hello") || b.contains("hello")) {
             System.out.println("TestDone");
         } else {
             Assert.fail("FailTest");
